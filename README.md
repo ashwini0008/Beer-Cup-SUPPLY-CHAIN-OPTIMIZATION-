@@ -189,11 +189,12 @@ python "R3 Solution Python Code.py"
 
 **Note about data files:** The Round 3 code references a JSON file for path configuration. The code currently contains a hardcoded path that you'll need to update:
 ```python
-# Update this path to your JSON file location
-json_file_path = r"path/to/your/updated_delay_port_destination_v2_sea.json"
+# Example: Update this path to your JSON file location
+json_file_path = r"./data/updated_delay_port_destination_v2_sea.json"
 ```
 
 You'll need to either:
+
 1. Update this path to point to your JSON file location
 2. Modify the code to use relative paths
 3. Use the sample data that's built into the code if no JSON file is found
