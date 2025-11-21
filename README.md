@@ -112,8 +112,7 @@ The solution optimizes complex international distribution:
 ## Project Structure
 
 ```
-Beer-Cup-SUPPLY-CHAIN-OPTIMIZATION/
-├── README.md                           # This file
+├── README.md                           # Project documentation
 ├── Round 1 Solution Python Code.py    # Basic supply chain optimization
 ├── R1 Solution Excel.xlsm              # Round 1 supporting data and validation
 ├── R3 Solution Python Code.py          # Advanced multi-port distribution
@@ -188,7 +187,34 @@ python "Round 1 Solution Python Code.py"
 python "R3 Solution Python Code.py"
 ```
 
-Note: Round 3 code references a JSON file path. You may need to update the path or provide your own data file.
+**Note about data files:** The Round 3 code references a JSON file for path configuration. The code currently contains a hardcoded path:
+```python
+json_file_path = r"C:\Users\ashwi\Downloads\BEER Cup\R3\New folder\updated_delay_port_destination_v2_sea.json"
+```
+
+You'll need to either:
+1. Update this path to point to your JSON file location
+2. Modify the code to use relative paths
+3. Use the sample data that's built into the code if no JSON file is found
+
+The JSON file should contain an array of shipping path objects with the following structure:
+```json
+[
+  {
+    "Port": "Port A",
+    "Destination": "France",
+    "Mode": "Sea",
+    "Type of Beercup": "95",
+    "Penalty Days without considering delay": "2",
+    "Reward Days without considering delay": "5",
+    "Penalty for Delay per day per batch": "20",
+    "Urgency Bonus per Day": "10",
+    "Transportation Cost": "150",
+    "Packaging Cost/unit of Beercup type": "50",
+    "Activation Cost of": "5000"
+  }
+]
+```
 
 ## Key Insights
 
