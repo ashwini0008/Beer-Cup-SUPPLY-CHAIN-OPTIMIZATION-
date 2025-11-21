@@ -187,9 +187,10 @@ python "Round 1 Solution Python Code.py"
 python "R3 Solution Python Code.py"
 ```
 
-**Note about data files:** The Round 3 code references a JSON file for path configuration. The code currently contains a hardcoded path:
+**Note about data files:** The Round 3 code references a JSON file for path configuration. The code currently contains a hardcoded path that you'll need to update:
 ```python
-json_file_path = r"C:\Users\ashwi\Downloads\BEER Cup\R3\New folder\updated_delay_port_destination_v2_sea.json"
+# Update this path to your JSON file location
+json_file_path = r"path/to/your/updated_delay_port_destination_v2_sea.json"
 ```
 
 You'll need to either:
